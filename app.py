@@ -22,7 +22,9 @@ def con():
     return connection
 
 
-
+@app.route('/')
+def myflask():
+    return 'hello world'
 @app.route('/item',methods=["GET"])
 def fun():
     connection= con()
